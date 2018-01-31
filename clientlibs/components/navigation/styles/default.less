@@ -1,1 +1,40 @@
 /* Default navigation */
+
+
+.cmp-navigation--default {
+  .cmp-navigation {
+    .cmp-navigation__group {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .cmp-navigation__item {
+
+      &--level-0 {
+        margin-left: .5em;
+      }
+
+      &--level-1 {
+        .cmp-navigation__item-link {
+          padding-left: 2rem;
+
+          &:before {
+            content: "\203A ";
+            padding-right: .5rem;
+          }
+        }
+      }
+    }
+
+    .cmp-navigation__item-link {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #f7f7f7;
+      }
+    }
+  }
+}

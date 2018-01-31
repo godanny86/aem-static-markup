@@ -111,6 +111,48 @@
                     
                 </div> <!-- main layout container grid -->
             </div><!-- end Main Layout Container div -->
+
+            <!-- Search component, insert custom class here -->
+            <div class="search aem-GridColumn aem-GridColumn--default--12">
+                <section class="cmp-search"
+                         role="search"
+                         data-cmp-is="search"
+                         data-cmp-min-length="1"
+                         data-cmp-results-size="10">
+                    <form class="cmp-search__form"
+                          data-cmp-hook-search="form"
+                          method="get" action="search.searchresults.json"
+                          autocomplete="off">
+                        <div class="cmp-search__field">
+                            <i class="cmp-search__icon"
+                               data-cmp-hook-search="icon"></i>
+                            <span class="cmp-search__loading-indicator"
+                                  data-cmp-hook-search="loadingIndicator"></span>
+                            <input class="cmp-search__input"
+                                   data-cmp-hook-search="input"
+                                   type="text"
+                                   name="fulltext"
+                                   placeholder="Search"
+                                   role="combobox"
+                                   aria-autocomplete="list"
+                                   aria-haspopup="true"
+                                   aria-invalid="false">
+                            <button class="cmp-search__clear"
+                                    data-cmp-hook-search="clear">
+                                <i class="cmp-search__clear-icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="cmp-search__results" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false"></div>
+
+                    <script data-cmp-hook-search="itemTemplate" type="x-template">
+                        <a class="cmp-search__item" data-cmp-hook-search="item">
+                            <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
+                        </a>
+                    </script>
+                </section>
+            </div>
+            <!-- End Search Component -->
             
         </div><!-- End aem-grid--12 -->
     </div><!-- End Root Container -->
