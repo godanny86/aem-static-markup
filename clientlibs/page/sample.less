@@ -1,0 +1,221 @@
+/* Basic */
+body {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: @text-color;
+}
+
+body .root {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input,
+textarea,
+select {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: @text-color;
+}
+strong,
+b {
+  color: @heading-color;
+  font-weight: 400;
+}
+i,
+em {
+  font-style: italic;
+}
+sub {
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+}
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+blockquote {
+  border-left: solid 0.75em @border-color;
+  padding: 1em 0 1em 1.5em;
+  font-style: italic;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: @heading-color;
+  font-weight: 700;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+a {
+  color: @primary-color;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+br.clear {
+  clear: both;
+}
+hr {
+  border: 0;
+  border-top: solid 1px @border-color;
+  height: 1px;
+  margin: 2em 0 2em 0;
+}
+p,
+ul,
+ol,
+dl,
+table {
+  margin-bottom: 2em;
+}
+/* Form */
+form label {
+  display: block;
+  color: @heading-color;
+  font-weight: 400;
+  margin: 0 0 0.5em 0;
+}
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form select,
+form textarea {
+  -webkit-appearance: none;
+  display: block;
+  border: 0;
+  padding: 0.75em 1em;
+  font-size: 1em;
+  border-radius: 5px;
+  border: solid 1px @border-color;
+  background: #fff;
+  width: 100%;
+}
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=password]:focus,
+form select:focus,
+form textarea:focus {
+  box-shadow: inset 0px 0px 1px 1px #43bff0;
+}
+form textarea {
+  height: 15em;
+}
+form .formerize-placeholder {
+  color: #555 !important;
+}
+form ::-webkit-input-placeholder {
+  color: #555 !important;
+}
+form :-moz-placeholder {
+  color: #555 !important;
+}
+form ::-moz-placeholder {
+  color: #555 !important;
+}
+form :-ms-input-placeholder {
+  color: #555 !important;
+}
+form ::-moz-focus-inner {
+  border: 0;
+}
+/* Tables */
+table {
+  width: 100%;
+}
+table.default {
+  width: 100%;
+}
+table.default tr {
+  border-top: solid 1px @border-color;
+}
+table.default tr:first-child {
+  border-top: 0;
+}
+table.default td {
+  padding: 0.5em 1em 0.5em 1em;
+}
+table.default th {
+  text-align: left;
+  padding: 0.5em 1em 0.5em 1em;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+table.default thead {
+  border-bottom: solid 2px @border-color;
+}
+/* Button */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+  -webkit-appearance: none;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  background: @primary-color;
+  color: #fff !important;
+  font-weight: 700;
+  outline: 0;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover {
+  background: #e53359;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active,
+.button:active {
+  background: #c51349;
+}
+input[type="button"].alt,
+input[type="submit"].alt,
+input[type="reset"].alt,
+button.alt,
+.button.alt {
+  background: #252122;
+}
+input[type="button"].alt:hover,
+input[type="submit"].alt:hover,
+input[type="reset"].alt:hover,
+button.alt:hover,
+.button.alt:hover {
+  background: #353132;
+}
+input[type="button"].alt:active,
+input[type="submit"].alt:active,
+input[type="reset"].alt:active,
+button.alt:active,
+.button.alt:active {
+  background: #151112;
+}
+input[type="button"].icon:before,
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+button.icon:before,
+.button.icon:before {
+  opacity: 0.35;
+  position: relative;
+  top: 0.05em;
+  margin-right: 0.75em;
+}
