@@ -4555,6 +4555,23 @@ Styles for header navigation
 .cmp-breadcrumb__item {
   display: inline-block;
   vertical-align: top;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+.cmp-breadcrumb__item:before {
+  content: "/";
+  color: #1daafc;
+  padding-right: 5px;
+}
+.cmp-breadcrumb__list .cmp-breadcrumb__item:first-child {
+  padding-left: 0px;
+}
+.cmp-breadcrumb__list .cmp-breadcrumb__item:first-child:before {
+  content: none;
+}
+.cmp-breadcrumb__item-link {
+  color: #252122;
+  text-decoration: none;
 }
 .cmp-image__image {
   width: 100%;

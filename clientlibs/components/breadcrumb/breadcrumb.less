@@ -9,4 +9,26 @@
 .cmp-breadcrumb__item {
     display: inline-block;
     vertical-align: top;
+    padding: 10px 5px;
+    font-weight: bold;
+    
+    &:before {
+        content: "/";
+        color: @primary-color;
+        padding-right: 5px;
+    }
+
+}
+
+.cmp-breadcrumb__list .cmp-breadcrumb__item:first-child {
+    padding-left: 0px;
+    
+    &:before {
+        content: none;   
+    }
+}
+
+.cmp-breadcrumb__item-link {
+    color: @heading-color;
+    text-decoration: none;
 }
