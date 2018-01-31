@@ -85,6 +85,30 @@
                         </div>
                     </div> <!-- End Title Component -->
                     
+                    <!-- Search Component -->
+                    <div class="search aem-GridColumn--default--none aem-GridColumn--offset--default--9 aem-GridColumn aem-GridColumn--default--3">
+                        <section class="cmp-search" role="search" data-cmp-min-length="3" data-cmp-results-size="10">
+                            <form class="cmp-search__form" data-cmp-hook-search="form" method="get" action="./" autocomplete="off">
+                                <div class="cmp-search__field">
+                                    <i class="cmp-search__icon" data-cmp-hook-search="icon"></i>
+                                    <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
+                                    <input class="cmp-search__input" data-cmp-hook-search="input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false" aria-owns="cmp-search-results-0">
+                                    <button class="cmp-search__clear" data-cmp-hook-search="clear" aria-hidden="true" style="display: none;">
+                                        <i class="cmp-search__clear-icon"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="cmp-search__results" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false" id="cmp-search-results-0" aria-hidden="true" style="display: none;">
+                        </div>
+                        <script data-cmp-hook-search="itemTemplate" type="x-template">
+                            <a class="cmp-search__item" data-cmp-hook-search="item">
+                                <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
+                            </a>
+                        </script>
+                        </section>
+                    </div>
+                    
+                    
                 </div> <!-- main layout container grid -->
             </div><!-- end Main Layout Container div -->
 
