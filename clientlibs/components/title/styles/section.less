@@ -1,0 +1,34 @@
+
+.cmp-title--section {
+	
+	.cmp-title {
+  		position: relative;
+  		text-align: center;
+  		border-top: solid 1px @title-section-line;
+  		top: 1em;
+  		margin: 0 0 3em 0;
+	}
+	
+	.cmp-title__text {
+		background: @title-section-bg;
+		position: relative;
+    	top: -0.65em;
+    	display: inline;
+    	margin: 0;
+    	padding: 0 1em 0 1em;
+	}
+
+	@media (max-width: @screen-mobile) {
+		.cmp-title {
+			margin: 0 0 1em 0;
+		}
+	}
+	
+	@media (min-width: (@screen-mobile + 1)) and (max-width: @screen-tablet) {
+		.cmp-title {
+			margin: 0.75em 0 2.5em 0;
+		}
+	}
+	
+}
+

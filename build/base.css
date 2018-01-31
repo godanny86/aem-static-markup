@@ -4302,6 +4302,60 @@ button.icon:before,
   margin-right: 0.75em;
 }
 /* Import Component styles */
+/*
+	import default and additonal style less files here
+	create variables that span styles here
+*/
+/* no additional style applied */
+.cmp-title--site .cmp-title {
+  text-align: center;
+  padding: 4em 0 0em 0;
+}
+.cmp-title--site .cmp-title__text {
+  color: #252122;
+  font-weight: 900;
+  font-size: 2.5em;
+  letter-spacing: -0.035em;
+  margin: 0em;
+}
+@media (max-width: 736px) {
+  .cmp-title--site .cmp-title {
+    padding: 0em 0 2em 0;
+  }
+  .cmp-title--site .cmp-title__text {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 737px) and (max-width: 1200px) {
+  .cmp-title--site .cmp-title {
+    padding: 3em 0 0 0;
+  }
+}
+.cmp-title--section .cmp-title {
+  position: relative;
+  text-align: center;
+  border-top: solid 1px #dddddd;
+  top: 1em;
+  margin: 0 0 3em 0;
+}
+.cmp-title--section .cmp-title__text {
+  background: #fff;
+  position: relative;
+  top: -0.65em;
+  display: inline;
+  margin: 0;
+  padding: 0 1em 0 1em;
+}
+@media (max-width: 736px) {
+  .cmp-title--section .cmp-title {
+    margin: 0 0 1em 0;
+  }
+}
+@media (min-width: 737px) and (max-width: 1200px) {
+  .cmp-title--section .cmp-title {
+    margin: 0.75em 0 2.5em 0;
+  }
+}
 /* Default navigation */
 /*
 Styles for header navigation

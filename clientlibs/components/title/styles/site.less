@@ -1,0 +1,32 @@
+
+.cmp-title--site {
+
+	.cmp-title {
+		text-align: center;
+		padding: 4em 0 0em 0;
+	}
+	
+	.cmp-title__text {
+		color: @title-text-color;
+    	font-weight: @title-site-font-weight;
+    	font-size: @title-site-font-base;
+    	letter-spacing: -0.035em;
+    	margin: 0em;
+	}
+	
+	@media (max-width: @screen-mobile) {
+		.cmp-title {
+			padding: 0em 0 2em 0;
+		}
+		
+		.cmp-title__text {
+			font-size: (@title-site-font-base * 0.7);
+		}
+	}
+	
+	@media (min-width: (@screen-mobile + 1)) and (max-width: @screen-tablet) {
+		.cmp-title {
+			 padding: 3em 0 0 0;
+		}
+	}
+}
