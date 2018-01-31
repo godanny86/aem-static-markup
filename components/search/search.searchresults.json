@@ -1,33 +1,33 @@
 [
-  {"url":"/result-1.html",
+  {"url":"#result-1.html",
   "path":"/result-1",
   "title":"Search result 1",
   "description":"This is the first search result.",
   "lastModified":1517411586951
   },
   {
-    "url":"result-2.html",
+    "url":"#result-2.html",
     "path":"/result-2",
     "title":"Search result 2",
     "description":"This is the second search result.",
     "lastModified":1517411576951
   },
   {
-    "url":"result-3.html",
+    "url":"#result-3.html",
     "path":"/result-3",
     "title":"Search result 3",
     "description":"This is the third search result.",
     "lastModified":1517411576951
   },
   {
-    "url":"result-4.html",
+    "url":"#result-4.html",
     "path":"/result-4",
     "title":"Search result 4",
     "description":"This is the fourth search result.",
     "lastModified":1517411573951
   },
   {
-    "url":"result-5.html",
+    "url":"#result-5.html",
     "path":"/result-5",
     "title":"Search result 5",
     "description":"This is the fifth search result.",
