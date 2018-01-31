@@ -10,7 +10,18 @@
     <title>Sharing</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    
+
+    <!-- Sharing Component - Head Tads -->
+    <meta property="og:title" content="AEM Sharing Core Component"/>
+    <meta property="og:url" content="http://localhost/content-to-share.html"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Samples"/>
+    <meta property="og:image" content="http://localhost/image-to-share.png"/>
+
+    <script type="text/javascript" async="" src="//assets.pinterest.com/js/pinit_main.js?0.1293706217711108"></script>
+    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.7"></script>
+    <!-- End Sharing Component - Head Tads -->
+
     <!-- CSS -->
     <link rel="stylesheet" href="../../build/base.css">
 
@@ -84,7 +95,23 @@
                             <h2 class="cmp-title__text">Sharing Component</h2>
                         </div>
                     </div> <!-- End Title Component -->
-                    
+
+                    <!-- Sharing component, insert custom class here -->
+                    <div class="sharing aem-GridColumn aem-GridColumn--default--12">
+                        <div class="fb-share-button" data-href="http://localhost/content-to-share.html"
+                             data-layout="button_count"
+                             data-size="small"
+                             data-mobile-iframe="false">
+                        </div>
+
+                        <a data-pin-do="buttonPin"
+                           data-pin-count="beside"
+                           data-pin-save="true"
+                           data-pin-media="http://localhost/image-to-share.png"
+                           href="https://www.pinterest.com/pin/create/button/"></a>
+                    </div>
+                    <!-- End Sharing Component -->
+
                 </div> <!-- main layout container grid -->
             </div><!-- end Main Layout Container div -->
             
