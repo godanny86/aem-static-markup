@@ -5,8 +5,8 @@ A static repository with AEM Core Component markup that can be used by front-end
 
 ## How To Use
 
-    $ git clone git@github.com:scotch-io/gulp-and-less-starter-kit.git
-    $ cd gulp-and-less-starter-kit
+    $ git clone git@github.com:godanny86/aem-static-markup.git
+    $ cd aem-static-markup
     $ npm install
     
 After, run
