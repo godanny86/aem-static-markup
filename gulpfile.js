@@ -20,7 +20,8 @@ gulp.task('build-js', function () {
                      'clientlibs/components/image/image.js',
                      'clientlibs/components/sharing/sharing.js',
                      'clientlibs/components/search/search.js',
-                     'clientlibs/components/navigation/navigation.js'])
+                     'clientlibs/components/navigation/navigation.js',
+                     'clientlibs/components/teaser/teaser.js'])
         .pipe(plugins.concat('base.js'))
         .pipe(gulp.dest('build'));
 });

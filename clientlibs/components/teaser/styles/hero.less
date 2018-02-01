@@ -1,0 +1,77 @@
+
+ @teaser-padding: 6em;
+ @teaser-margin: 1.5em;
+ @teaser-default-bg: #252122;
+ @teaser-header-color: #fff;
+ @teaser-header-size : 2.5em;
+ @teaser-link-bg-color: @primary-color;
+ @teaser-link-bg-hover: #e53359;
+ 
+.cmp-teaser--hero {
+	
+	&.full-width {
+		padding:0;
+		background: @teaser-default-bg;
+		display: block;
+	  	padding: @teaser-padding 0em;
+	  	position: relative;
+	  	background-position: center center;
+    	background-repeat: no-repeat;
+    	text-align: center;
+    	margin-top: @teaser-margin;
+    	margin-bottom: @teaser-margin;
+    	background-size: cover;
+    	background-attachment:fixed;
+	}
+	
+
+	.cmp-teaser {
+	  	display: inline-block;
+    	padding: 2.5em 5em;
+    	border-radius: 5px;  
+    	background-color: #252122;
+	}
+
+  .cmp-teaser__image {
+   display: none;
+  }
+
+  
+
+  .cmp-teaser__title {
+    color:  @teaser-header-color;
+    font-size: @teaser-header-size;
+    margin: 0 0 0.65em 0;
+  }
+
+  .cmp-teaser__description {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: @primary-color;
+
+  }
+
+  .cmp-teaser__link {
+    margin: 0 @teaser-padding;
+    background: @teaser-link-bg-color;
+    font-size: 1.1em;
+    padding: 0.65em 1.5em 0.65em 1.5em;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    color: #fff !important;
+    font-weight: 700;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+
+    &:hover {
+      text-decoration: none;
+      background:  @teaser-link-bg-hover;
+    }
+  }
+	
+} 

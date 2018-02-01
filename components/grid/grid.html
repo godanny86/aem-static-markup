@@ -75,7 +75,7 @@
             </div><!-- End Navigation Component -->
             
             <!-- Main Layout Container, can insert custom class here -->
-            <div class="responsivegrid sample-xxx aem-GridColumn aem-GridColumn--default--12">
+            <div class="responsivegrid cmp-responsivegrid--highlight aem-GridColumn aem-GridColumn--default--12">
                 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
                     
                     <!-- Title Component where 'cmp-title--sample-xxx' is a custom style that can be added.  -->
@@ -85,7 +85,355 @@
                         </div>
                     </div> <!-- End Title Component -->
                     
-                </div> <!-- main layout container grid -->
+                    <!--  Title Component -->
+                     <div class="title aem-GridColumn aem-GridColumn--default--12">
+							<div class="cmp-title">
+							    <h2 class="cmp-title__text">Intro</h2>
+							</div>
+					 </div> <!--  end Title Component -->
+					
+					<!-- Text Component -->
+					<div class="text aem-GridColumn aem-GridColumn--default--12">
+						<div class="cmp-text">
+							<p>
+								The AEM Responsive Grid is entirely percentage based, typically
+								with 12 columns. This means that a component or container set to
+								12 will be 100% of the width. A container set to 11 will be
+								91.6667%, a grid set to 6 will be 50% and so on. The AEM
+								Responsive Grid supports 3 breakpoints: <b>Default</b>, <b>Tablet</b>,
+								and <b>Mobile</b>. The breakpoints are configurable via the <b>grid.less
+								</b>file when generating the grid over CSS. Containers in the grid
+								do not stack automatically once different break points are
+								reached, instead additional CSS classes must be added to change
+								the behavior of the component per breakpoint. The Grid defaults
+								to float left.
+							</p>
+							<p>
+								AEM uses a concept of Layout Containers to help define the
+								layout of a page. You can think of them as empty components
+								whose only job is to control the layout. Components are then
+								added inside a Layout Container. You can easily identify Layout
+								Containers from other components when you see the <b>.responsivegrid</b>
+								class. A Layout Container known as the <b>Root</b> layout
+								container is typically the outtermost div directly after the
+								body tag. There is nothing special about the Root layout
+								container but it is a common convention to use it as a
+								page-wrapper. It is easily identified with a<b> .root</b> class.
+							</p>
+							<p>Grid CSS classes can also be applied to the outter div of
+								a component. By default components should take up 100% of the
+								width in whichever container they are dropped in. Use additional
+								Grid classes to control the width of a component within a
+								container. Again because the Grid system is percentage based if
+								a component is set to a width of 6 (50%) and inserted into a
+								layout container that also has a width of 6 (50% of page width),
+								the component would take up only 25% fo the total page width.</p>
+							<p>In additon to controlling width the Responisve Grid also
+								supports:</p>
+							<ul>
+								<li>hiding components based on breakpoint</li>
+								<li>Floating components based on breakpoint</li>
+								<li>offset components to position them on the right.</li>
+							</ul>
+						</div>
+					</div> <!-- end Text Component -->
+
+					<!-- Title Component -->
+					<div class="title aem-GridColumn aem-GridColumn--default--12">
+						<div class="cmp-title">
+							<h2 class="cmp-title__text">Default Grid</h2>
+						</div>
+					</div><!-- end Title Component -->
+
+					<!-- Text Component -->
+					<div class="text aem-GridColumn aem-GridColumn--default--12">
+						<div class="cmp-text">
+							<p>
+								The <b>.aem-GridColumn--default-xxx </b>where <b>xxx</b> is a
+								number from 1-12. Default simply means there is no
+								breakpoint/media query for these CSS rules. This is easy to
+								conflate with &quot;Desktop&quot; but they are not quite the
+								same, really just anything larger than the Tablet breakpoint.
+							</p>
+						</div>
+					</div><!-- end Text Component -->
+
+					<!-- Title Component -->
+					<div
+						class="title aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+						<div class="cmp-title">
+							<h4 class="cmp-title__text">aem-GridColumn--default--1</h4>
+						</div>
+					</div><!-- end Title Component -->
+
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.<br />
+							</p>
+						</div>
+					</div>
+					
+					<!-- Title Component -->
+					<div
+						class="title aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+						<div class="cmp-title">
+							<h4 class="cmp-title__text">.aem-GridColumn--default--2</h4>
+						</div>
+					</div><!-- end Title Component -->
+
+					<!-- Text Component with 2 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--2">
+						<div class="cmp-text">
+							<p>
+								2 col.
+							</p>
+						</div>
+					</div><!-- end Text Component with 2 column width -->
+					
+						<!-- Text Component with 2 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--2">
+						<div class="cmp-text">
+							<p>
+								2 col.
+							</p>
+						</div>
+					</div><!-- Text Component with 2 column width -->
+						<!-- Text Component with 2 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--2">
+						<div class="cmp-text">
+							<p>
+								2 col.
+							</p>
+						</div>
+					</div><!-- Text Component with 2 column width -->
+						<!-- Text Component with 2 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--2">
+						<div class="cmp-text">
+							<p>
+								2 col.
+							</p>
+						</div>
+					</div><!-- Text Component with 2 column width -->
+						<!-- Text Component with 2 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--2">
+						<div class="cmp-text">
+							<p>
+								2 col.
+							</p>
+						</div>
+					</div><!-- Text Component with 2 column width -->
+						<!-- Text Component with 2 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--2">
+						<div class="cmp-text">
+							<p>
+								2 col.
+							</p>
+						</div>
+					</div><!-- Text Component with 2 column width -->
+					 
+					<!-- Title Component -->
+					<div
+						class="title aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+						<div class="cmp-title">
+							<h4 class="cmp-title__text">Mix and match (but adds to 12)</h4>
+						</div>
+					</div><!-- end Title Component -->
+
+					<!-- Text Component with 1 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--1">
+						<div class="cmp-text">
+							<p>
+								1 col.
+							</p>
+						</div>
+					</div><!-- end Text Component with 1 column width -->
+					
+					<!-- Text Component with 2 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--2">
+						<div class="cmp-text">
+							<p>
+								2 col.
+							</p>
+						</div>
+					</div><!-- end Text Component with 2 column width -->
+					<!-- Text Component with 3 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--3">
+						<div class="cmp-text">
+							<p>
+								3 col.
+							</p>
+						</div>
+					</div><!-- end Text Component with 3 column width -->
+					<!-- Text Component with 6 column width -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--default--6">
+						<div class="cmp-text">
+							<p>
+								6 col.
+							</p>
+						</div>
+					</div><!-- end Text Component with 3 column width -->
+
+					<!-- Title Component -->
+					<div class="title aem-GridColumn aem-GridColumn--default--12">
+						<div class="cmp-title">
+							<h2 class="cmp-title__text">Tablet and Phone Grid</h2>
+						</div>
+					</div> <!-- End Title Component -->
+
+					<!-- Text Component -->
+					<div class="text aem-GridColumn aem-GridColumn--default--12">
+						<div class="cmp-text">
+							<p>Mobile and Tablet css classes are then added to container
+								to change the width for respective breakpoints.&nbsp;</p>
+							<p>
+								Tablet: <b>.aem-GridColumn--tablet-xxx</b> , Phone: <b>.aem-GridColumn--phone-xxx</b>
+							</p>
+							<p> Resize your browser to < 1200px to engage the Tablet view and the components should align 2x2. 
+							Resizing the browser < 737px will engage the Phone view and components will stack vertically 1x1. 
+							View the <b>grid.less</b> and <b>variables.less</b> to see how the breakpoints are set. 
+							They can be changed and then the LESS can be re-compiled to utilize a different set of breakpoints.</p>
+						</div>
+					</div>
+					<!-- end Text Component -->
+
+					<!-- Text Component with different columns based on breakpoints. 3 column width in Desktop, 6 column in Tablet. and 12 column in Phone -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--3">
+						<div class="cmp-text">
+							<p>
+								3 col. Desktop<br> 6 col. Tablet<br> 12 col. Phone
+							</p>
+						</div>
+					</div> <!-- end Text Component -->
+					<!-- Text Component with different columns based on breakpoints. 3 column width in Desktop, 6 column in Tablet. and 12 column in Phone -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--3">
+						<div class="cmp-text">
+							<p>
+								3 col. Desktop<br> 6 col. Tablet<br> 12 col. Phone
+							</p>
+						</div>
+					</div> <!-- end Text Component -->
+					<!-- Text Component with different columns based on breakpoints. 3 column width in Desktop, 6 column in Tablet. and 12 column in Phone -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--3">
+						<div class="cmp-text">
+							<p>
+								3 col. Desktop<br> 6 col. Tablet<br> 12 col. Phone
+							</p>
+						</div>
+					</div> <!-- end Text Component -->
+					<!-- Text Component with different columns based on breakpoints. 3 column width in Desktop, 6 column in Tablet. and 12 column in Phone -->
+					<div
+						class="text cmp-text--grid-example aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--3">
+						<div class="cmp-text">
+							<p>
+								3 col. Desktop<br> 6 col. Tablet<br> 12 col. Phone
+							</p>
+						</div>
+					</div> <!-- end Text Component -->
+					
+				</div> <!-- main layout container grid -->
             </div><!-- end Main Layout Container div -->
             
         </div><!-- End aem-grid--12 -->
