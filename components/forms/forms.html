@@ -85,6 +85,146 @@
                         </div>
                     </div> <!-- End Title Component -->
                     
+                    <!--  Start Form Container -->
+                    <form method="POST"
+                    action="/submit" id="new_form"
+                    name="new_form" enctype="multipart/form-data"
+                    class="cmp-form sample-xxx aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--default--0">
+                
+                	<!-- Form Text Component (with placeholder) -->
+                    <div class="text sample-xxx aem-GridColumn aem-GridColumn--default--12">
+                        <div class="cmp-form-text" data-cmp-is="formText">
+                            <label for="form-text-221177075">Text input field</label> <input
+                                class="cmp-form-text__text" data-cmp-hook-form-text="input"
+                                type="text" id="form-text-221177075" name="text" placeholder="Enter Text here">
+                        </div>
+                    </div> <!-- end Form Text Component  -->
+                    
+                    <!-- Form Text  Component (with help message) 
+                    	 Also notice the data-cmp-required-message attribute. could tie in w/ JS for this -->
+                    <div class="text sample-xxx aem-GridColumn aem-GridColumn--default--12">
+						<div class="cmp-form-text" data-cmp-is="formText" data-cmp-required-message="This is required.">
+    						<label for="form-text-221177075">Text Input Field</label>
+    						<p class="cmp-form-text__help-block">Help Message</p>
+						    <input class="cmp-form-text__text" data-cmp-hook-form-text="input" type="text" id="form-text-221177075" name="other" required="">
+						</div>
+					</div><!--  end Form Text Component -->
+					
+                    <!-- Form Hidden component -->
+                    <div class="hidden aem-GridColumn aem-GridColumn--default--12">
+                        <input type="hidden" id="hidden-field" name="hidden" value="im-hidden">
+                    </div> <!-- end Form Hidden component -->
+                    
+                    <!-- Options component (using checkboxes) -->
+                    <div
+                        class="options-checkboxes sample-xxx options aem-GridColumn aem-GridColumn--default--12">
+                        <fieldset class="cmp-form-options">
+                            <legend class="cmp-form-options__legend">Options as
+                                Checkboxes</legend>
+                            <label class="cmp-form-options__field-label"> <input
+                                class="cmp-form-options__field cmp-form-options__field--checkbox"
+                                type="checkbox" name="checkboxes" value="1"> Option 1
+                            </label> <label class="cmp-form-options__field-label"> <input
+                                class="cmp-form-options__field cmp-form-options__field--checkbox"
+                                type="checkbox" name="checkboxes" value="2"> Option 2
+                            </label> <label class="cmp-form-options__field-label"> <input
+                                class="cmp-form-options__field cmp-form-options__field--checkbox"
+                                type="checkbox" name="checkboxes" value="3"> Option 3
+                            </label>
+                            <p class="cmp-form-options__help-message">Optional help message or description</p>
+                        </fieldset>
+                    </div><!-- end Options component (using checkboxes) -->
+                    
+                    <!-- Options component (using radio buttons) -->
+                    <div
+                        class="options-radio-buttons sample-xxx options aem-GridColumn aem-GridColumn--default--12">
+                        <fieldset class="cmp-form-options">
+                            <legend class="cmp-form-options__legend">Options as Radio
+                                buttons</legend>
+                            <label class="cmp-form-options__field-label"> <input
+                                class="cmp-form-options__field cmp-form-options__field--radio"
+                                type="radio" name="radio-buttons" value="1"> Option 1
+                            </label> <label class="cmp-form-options__field-label"> <input
+                                class="cmp-form-options__field cmp-form-options__field--radio"
+                                type="radio" name="radio-buttons" value="2"> Option 2
+                            </label> <label class="cmp-form-options__field-label"> <input
+                                class="cmp-form-options__field cmp-form-options__field--radio"
+                                type="radio" name="radio-buttons" value="3" disabled="">
+                                Option 3
+                            </label>
+                            <p class="cmp-form-options__help-message">Optional help message or description</p>
+                        </fieldset>
+                    </div><!-- end Options component (using checkboxes) -->
+                    
+                    <!-- Options component (using Select or drop down) -->
+                    <div
+                        class="options-drop-down sample-xxx options aem-GridColumn aem-GridColumn--default--12">
+                        <fieldset class="cmp-form-options">
+                            <label class="cmp-form-options__label" for="form-options-1980970007">Options
+                                as Drop-down</label> 
+                              <select
+                                class="cmp-form-options__field cmp-form-options__field--drop-down"
+                                name="drop-down" id="form-options-1980970007">
+
+                                <option value="1" selected="">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3" disabled="">Option 3</option>
+                            </select>
+                             <p class="cmp-form-options__help-message">Optional help message or description</p>
+                        </fieldset>
+                    </div><!-- end Options component (using Select or drop down) -->
+                    
+                    <!-- Options component (using mulit select) -->
+                    <div
+                        class="options-multi-dropdown sample-xxx options aem-GridColumn aem-GridColumn--default--12">
+                        <fieldset class="cmp-form-options">
+                            <label class="cmp-form-options__label" for="form-options-1461717702">Options
+                                as Multi-select drop-down</label> <select
+                                class="cmp-form-options__field cmp-form-options__field--multi-drop-down"
+                                name="multi-drop-down" id="form-options-1461717702" multiple="">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                             <p class="cmp-form-options__help-message">Optional help message or description</p>
+                        </fieldset>
+                    </div><!-- end Options component (using mulit select) -->
+                    
+                    <!-- Button component (regular) -->
+                    <div
+                        class="button-regular sample-xxx button aem-GridColumn aem-GridColumn--default--12">
+                        <button type="BUTTON" class="cmp-form-button" name="button"
+                            value="regular-button">Regular Button</button>
+                    </div>
+                    
+                    <!-- Button component (submit) -->
+                    <div
+                        class="button-submit sample-xxx button aem-GridColumn aem-GridColumn--default--12">
+                        <button type="SUBMIT" class="cmp-form-button" name="submit"
+                            value="submit-form">Submit Button</button>
+                    </div>
+                </form>
+                    
+                <div class="text sample-xxx aem-GridColumn aem-GridColumn--default--6">
+                        <div class="cmp-text">
+                          <p>There are really only 4 form components:</p>
+                          <ol>
+                          	<li><b><a target="_blank" href="https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v2/button">
+                          		Button</a></b></li>
+                          	<li><b><a target="_blank" href="https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/container/v2/container">
+                          		Container</a></b></li>
+                          	<li><b><a target="_blank" href="https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v2/hidden">
+                          		Hidden</a></b></li>
+                          	<li><b><a target="_blank" href="https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v2/options">
+                          	Options</a></b></li>
+                          	<li><b><a target="_blank" href="https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/text/v2/text">
+                          		Text</a></b></li>
+                          </ol>
+                          <p>The <b>Options</b> component offers the most variations as it can be rendered using Checkboxes, Radio Buttons, Dropdown, or Multi-Select</p>
+                        
+                        </div>
+                    </div>
+                    
                 </div> <!-- main layout container grid -->
             </div><!-- end Main Layout Container div -->
             
