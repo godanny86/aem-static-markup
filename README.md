@@ -1,7 +1,7 @@
 # Static AEM Markup
 ====================================
 
-A static repository with AEM Core Component markup that can be used by front-end developers to style.
+A static repository with AEM Core Component markup that can be used by front-end developers to style AEM Core components.
 
 ## How To Use
 
@@ -23,6 +23,14 @@ Should use [Livereload extension](http://livereload.com/extensions/). Or inject 
 
 When you change a LESS(or JS) file, the page will reload.
 
+	$ gulp build-css 
+
+To compile just the LESS into a single CSS file (stored under build/base.css)
+
+	$ gulp build-js 
+
+To compile just the JS into a single file (stored under build/base.js)
+
 ## Updates
 
 **If this isn't working**, it's probably because you need to update. Just run `npm update --save-dev`
@@ -40,11 +48,6 @@ npm update --save-dev
 gulp
 ```
 
-
-## Quick Tips
-- Any changes in `assets/less/*` will trigger the Less to compile on save
-- All files in `assets/js/libs/*`  will be compressed to `build/jquery.plugins.min.js`
-- All files in `assets/js/*` (except for `libs`) will be compressed to `build/scripts.min.js`
 
 
 #### Special Thanks
