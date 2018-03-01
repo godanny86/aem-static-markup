@@ -1,0 +1,186 @@
+@list-teaser-padding-vertical: 20px;
+@list-teaser-padding-horizontal: 18px;
+@list-grid-gap: 24px;
+
+.cmp-list-sample {
+
+    .cmp-image {
+        max-width: 60px;
+        margin-right: 5px;
+    }
+
+    .cmp-image__image {
+        margin-bottom: 0 !important; // !important fights responsive grid opinion
+    }
+
+    .cmp-list__item-description,
+    .cmp-image {
+        display: none;
+    }
+
+    &.cmp-list-sample--teaser {
+        .cmp-list {
+            margin: 0;
+            padding: 0;
+
+            list-style-type: none;
+        }
+
+        .cmp-list__item {
+            position: relative;
+            overflow: hidden;
+            margin: 0 0 @list-grid-gap;
+
+            background: rgba(0, 0, 0, 0.05);
+
+            > article {
+                height: 100%;
+            }
+        }
+
+        .cmp-list__item-link {
+            display: block;
+            height: 100%;
+            overflow: hidden;
+
+            text-decoration: none;
+
+            &:hover {
+                .cmp-list__item-title {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .cmp-list__item-title {
+            display: block;
+            padding: @list-teaser-padding-horizontal @list-teaser-padding-vertical;
+
+            line-height: 24px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .cmp-list__item-description {
+            margin-top: -(@list-teaser-padding-vertical / 2);
+            padding: 0 @list-teaser-padding-horizontal @list-teaser-padding-vertical;
+
+            font-size: 14px;
+            color: #aaa;
+
+            &::before {
+                content: "";
+            }
+        }
+
+        .cmp-list__item-link {
+            color: #000;
+        }
+    }
+
+    &.cmp-list-sample--block {
+        .cmp-list__item-title {
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            line-height: 18px;
+            font-size: 16px;
+        }
+
+        .cmp-list__item-description {
+            margin-top: -(10px / 2);
+            padding-bottom: 10px;
+        }
+
+        .cmp-image {
+            float: left;
+
+            width: 40%;
+            min-width: 125px;
+            max-width: 250px;
+            margin-right: 12px;
+        }
+
+        .cmp-image__image {
+            margin-bottom: 0 !important;
+        }
+
+        &.cmp-list-sample--description {
+            .cmp-list__item-description{
+                display: block;
+            }
+        }
+
+        @media (min-width: @screen-mobile) {
+            .cmp-list__item-title {
+                line-height: 24px;
+                font-size: 18px;
+            }
+
+            .cmp-image {
+                margin-right: @list-teaser-padding-horizontal;
+            }
+        }
+
+        @media (min-width: @screen-tablet) {
+            .cmp-list__item-title {
+                padding-top: @list-teaser-padding-vertical;
+                padding-bottom: @list-teaser-padding-vertical;
+            }
+
+            .cmp-list__item-description {
+                margin-top: -(@list-teaser-padding-vertical / 2);
+                padding-bottom: @list-teaser-padding-vertical;
+            }
+        }
+    }
+
+    &.cmp-list-sample--grid {
+        .cmp-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .cmp-list__item {
+            flex: 0 1 auto;
+
+            @media (min-width: @screen-mobile) {
+                flex-basis: ~"calc(50% - (@{list-grid-gap} / 2))";
+            }
+
+            @media (min-width: @screen-tablet) {
+                flex-basis: ~"calc(33% - (@{list-grid-gap} / 2))";
+            }
+        }
+
+        .cmp-image {
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        &.cmp-list-sample--description {
+            .cmp-list__item-description {
+                display: block;
+            }
+        }
+
+        &.cmp-list-sample--image {
+            .cmp-image {
+                display: block;
+            }
+        }
+    }
+
+    &.cmp-list-sample--description {
+        .cmp-list__item-description {
+            display: inline;
+        }
+    }
+
+    &.cmp-list-sample--image {
+        .cmp-image {
+            display: inline-block;
+        }
+    } 
+}
